@@ -19,13 +19,13 @@ class CitySeeder extends Seeder
             City::create([
                 'name' => $county->name . ' város 1',
                 'zip_code' => '1000',
-                'id_county' => $county->id,
+                'county_id' => $county->id,
             ]);
 
             City::create([
                 'name' => $county->name . ' város 2',
                 'zip_code' => '2000',
-                'id_county' => $county->id,
+                'county_id' => $county->id,
             ]);
         }
     }

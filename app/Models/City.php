@@ -10,7 +10,7 @@ class City extends Model
     protected $fillable =[
         'name',
         'zip_code',
-        'id_county'
+        'county_id'
     ];
     public function county(){
         return $this->belongsTo(County::class);
