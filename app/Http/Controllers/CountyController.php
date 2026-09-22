@@ -30,7 +30,7 @@ class CountyController extends Controller
         $county = County::create($validated);
 
         return redirect()
-            ->route('counties.show', $county)
+            ->route('counties.index', compact('county'))
             ->with('status', 'Megye létrehozva!');
     }
 
@@ -54,7 +54,7 @@ class CountyController extends Controller
         $county->update($validated);
 
         return redirect()
-            ->route('counties.show', $county)
+            ->route('counties.index', compact('county'))
             ->with('status', 'Megye frissítve!');
     }
 

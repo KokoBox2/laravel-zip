@@ -19,7 +19,9 @@ class CityController extends Controller
      */
     public function create()
     {
-        //
+       /**
+        *  return view('cities.create');
+         */
     }
 
     /**
